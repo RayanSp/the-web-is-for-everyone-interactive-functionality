@@ -1,0 +1,62 @@
+* {
+    font-family: monsterrat, sans-serif;
+}
+
+:root {
+    --clr-yellow: #f4eb34;
+    --clr-green: #72afa6;
+    --top-margin: 0rem;
+    --left-margin: 0rem;
+    --right-margin: 0rem;
+}
+
+body {
+    
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
+    margin-top: var(--top-margin);
+}
+
+.vinimini-header {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    background-color: var(--clr-yellow);
+}
+
+.vinimini-header h1 {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 2px;
+    padding-right: 2px;
+    list-style: none;
+}
+
+.nav-content {
+    text-decoration: none;
+    color: black;
+    left: 0;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.nav-content:hover {
+    color: var(--clr-green);
+    border-bottom: 2px solid var(--clr-green);
+}
