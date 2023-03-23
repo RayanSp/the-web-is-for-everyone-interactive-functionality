@@ -5,29 +5,26 @@ const url = 'https://api.vinimini.fdnd.nl/api/v1'
 // Maak een nieuwe express app
 const app = express()
 
-// Stel in hoe we express gebruiken
+// stel de public map in
+app.use(express.static('public'))
+
+// Stel de view engine in
 app.set('view engine', 'ejs')
 app.set('views', './views')
-app.use(express.static('public'))
+
+// Stel de afhandeling van formulieren in
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 // Maak een route voor de index
 app.get('/', (request, response) => {
   let semesterUrl = url + '/producten'
 
-  fetchJson(semesterUrl).then((data) => {
+  fetchJson(url).then((data) => {
     console.log(data)
     response.render('index', data)
   })
 })
-
-// app.get('/sprint', (request, response) => {
-//   let slug = request.query.sprintSlug || 'your-tribe'
-//   let sprintUrl = url + '/sprint/' + slug
-//   fetchJson(sprintUrl).then((data) => {
-//     // console.log(data)
-//     response.render('sprint', data)
-//   })
-// })
 
 app.get('/over-ons', (request, response) => {
   response.render('over')
@@ -41,6 +38,10 @@ app.get('/contact', (request, response) => {
   response.render('contact')
 })
 
+app.get('/new', (request, response) => {
+    response.render('form')
+  })
+
 // Stel het poortnummer in en start express
 app.set('port', process.env.PORT || 8000)
 app.listen(app.get('port'), function () {
@@ -53,7 +54,17 @@ app.listen(app.get('port'), function () {
  * @returns the json response from the api endpoint
  */
 async function fetchJson(url) {
-  return await fetch(url)
-    .then((response) => response.json())
-    .catch((error) => error)
-}
+    return await fetch(url)
+      .then((response) => response.json())
+      .catch((error) => error)
+  }
+
+export async function postJson(url, body) {
+    return await fetch(url, {
+      method: 'post',
+      body: JSON.stringify(body),
+      headers: { 'Content-Type': 'application/json' },
+    })
+      .then((response) => response.json())
+      .catch((error) => error)
+  }
