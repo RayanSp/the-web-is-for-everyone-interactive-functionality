@@ -60,3 +60,88 @@ nav {
     color: var(--clr-green);
     border-bottom: 2px solid var(--clr-green);
 }
+
+.main-title {
+    color: var(--clr-green);
+    text-align: center;
+}
+
+.note-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: var(--clr-yellow); */
+    width: 30rem;
+    /* box-shadow: 5px 5px 10px black; */
+}
+
+legend {
+    text-align: center;
+    /* width: 30rem; */
+    margin-bottom: 1.5rem;
+}
+
+.input-date {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.input-date:focus {
+    background-color: var(--clr-green);
+    outline: none;
+}
+
+.textarea-aantekening {
+    border: 2px solid black;
+    margin-top: .5rem;
+    padding-left: 5px;
+}
+
+.textarea-aantekening:focus {
+    background-color: var(--clr-green);
+    outline: none;
+}
+
+.form-btn {
+    color: var(--clr-green);
+    cursor: pointer;
+    border: 2px solid var(--clr-green);
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+    width: 10rem;
+    border-radius: 25px;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    margin-top: 1.5rem;
+    transition: .2s ease-in-out;
+}
+
+.form-btn:hover {
+    background-color: var(--clr-green);
+    color: white;
+}
+
+@media screen and (min-width: 930px ) {
+    .vinimini-header h1 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-title {
+        font-size: 25px;
+    }
+}
