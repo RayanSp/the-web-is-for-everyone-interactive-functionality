@@ -4,15 +4,21 @@
 
 <section class="dagboek-section">
 
-    <form class="note-form" action="/new" method="post">
+    <form class="note-form" action="/notities" method="post">
         <fieldset class="fieldset-form">
             <legend>Type hier jouw aantekeningen</legend>
 
-                <label>Datum van aantekening</label>
-                <input class="input-date" type="date" name="date" placeholder="datum" required>
+                <label class="input-label">Datum van aantekening</label>
+                <input class="input-date" type="datetime-local" name="datum" placeholder="datum" required>
 
-                <label>Type hier uw aantekening</label>
-                <textarea class="textarea-aantekening" cols="30" rows="10" type="text" name="note" placeholder="Type hier..." required></textarea>
+                <label class="input-label">Titel</label>
+                <input class="input-titel" type="text" name="titel" placeholder="Notitie titel" required>
+
+                <label class="input-label">Type hier uw aantekening</label>
+                <textarea class="textarea-aantekening" cols="30" rows="10" type="text" name="beschrijving" autocomplete="on" placeholder="Type hier..." required></textarea>
+
+                <label class="input-label">Herinnering</label>
+                <input class="input-date" type="datetime-local" name="herinnering" placeholder="datum" required>
 
                 <button class="form-btn" type="submit" value="opslaan">Opslaan</button>
 
