@@ -177,7 +177,8 @@ legend {
     border-radius: 25px;
     padding-top: .3rem;
     padding-bottom: .3rem;
-    margin-top: 1.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
     transition: .2s ease-in-out;
 }
 
