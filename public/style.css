@@ -104,7 +104,12 @@ legend {
     padding-bottom: 5px;
     padding-left: 5px;
     border: 2px solid black;
-    font-weight: bold;
+    font-weight: normal;
+}
+
+.input-date:focus {
+    background-color: var(--clr-green);
+    outline: none;
 }
 
 .input-titel {
@@ -122,14 +127,30 @@ legend {
     outline: none;
 }
 
+.input-mail {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    border: 2px solid black;
+    font-weight: normal;
+}
+
+.input-mail:focus {
+    background-color: var(--clr-green);
+    outline: none;
+}
+
 .input-label:after {
     content: "*";
     color: red;
 }
 
-.input-date:focus {
-    background-color: var(--clr-green);
-    outline: none;
+.input-label-uitleg {
+    font-weight: normal;
+    opacity: 0.5;
+    font-size: 13px;
 }
 
 .textarea-aantekening {
