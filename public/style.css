@@ -105,11 +105,13 @@ legend {
     padding-left: 5px;
     border: 2px solid black;
     font-weight: normal;
+    transition: .3s;
 }
 
 .input-date:focus {
     background-color: var(--clr-green);
     outline: none;
+    transform: scale(1.03);
 }
 
 .input-titel {
@@ -120,11 +122,13 @@ legend {
     padding-left: 5px;
     border: 2px solid black;
     font-weight: normal;
+    transition: .3s;
 }
 
 .input-titel:focus {
     background-color: var(--clr-green);
     outline: none;
+    transform: scale(1.03);
 }
 
 .input-mail {
@@ -135,11 +139,13 @@ legend {
     padding-left: 5px;
     border: 2px solid black;
     font-weight: normal;
+    transition: .3s;
 }
 
 .input-mail:focus {
     background-color: var(--clr-green);
     outline: none;
+    transform: scale(1.03);
 }
 
 .input-label:after {
@@ -158,11 +164,13 @@ legend {
     margin-top: .5rem;
     margin-bottom: 1rem;
     padding-left: 5px;
+    transition: .3s;
 }
 
 .textarea-aantekening:focus {
     background-color: var(--clr-green);
     outline: none;
+    transform: scale(1.03);
 }
 
 .form-btn {
