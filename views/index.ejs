@@ -32,6 +32,17 @@
     <div class="aantekeningen-div">
         <fieldset class="aantekeningen-output">
             <legend>Hier komen jouw aantekeningen</legend>
+
+            <% notities.forEach(notitie => { %>
+     
+                <article class="notitie-container">
+                
+                    <h3><%= notitie.titel %></h3>
+                    <p><%= notitie.beschrijving %></p>
+                
+                </article>
+            <% }); %>
+
         </fieldset>
     </div>
 </section>    
