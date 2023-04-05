@@ -29,7 +29,7 @@ Website gemaakt met Express, NODE en EJS. Op deze website kan je een notitie aan
 👷🏽 Technieken 
  - EJS
 
-EJS laadt de HTML uit andere EJS-bestanden in en zet deze om in HTML, dit wordt gedaan met een simpele regel code.
+EJS is een template taal die HTML genereert. In dit project worden aparte EJS-bestanden omgezet HTML, dit wordt gedaan met een simpele regel code.
 `<%- include('./partials/head') %>` en voor de footer `<%- include('./partials/footer') %>`
 
  - Node Js
@@ -42,11 +42,10 @@ Met express wordt de route van de data geregeld die wordt opgehaald.
 
 
 ## 💻Installatie
- - Ik ben begonnen met het installeren van Node
- - Vervolgens heb ik deze repo gecloned en geopend in mijn visual studio code
- - In VSC heb ik de terminal geopend en NPM Install getypt.
- - Vervolgens heb ik NPM start getypt om een localhost te krijgen waar mijn site op te zien was
- - Als laatst heb ik mijn website online gezet met een live link via cyclic. 
+ - Dit project kan geforked worden, dit doe je door rechtsboven op fork te drukken. 
+ - .gitignore wordt gebruikt zodat niet alle packages gecommit worden. 
+ - Met NPM install laadt je alle packages
+ - Met NPM start open je dit project in een localhost door de startersscript die ik gebruik in package.json 
 
 ## 🔨Gebruik
 De website heeft een formulier, waar je in een textarea een notitie voor jezelf kan opschrijven. Van deze notitie krijg je een reminder. Deze notities zou de gebruiker kunnen gebruiken om ervaringen te noteren. 
