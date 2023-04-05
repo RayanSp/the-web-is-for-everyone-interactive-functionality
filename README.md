@@ -41,6 +41,9 @@ Met node zorg je ervoor dat Javascript aan de server-side gebruikt wordt ipv de 
 
 Met express wordt de route van de data geregeld die wordt opgehaald. 
 
+ - EJS
+ - CSS
+
 
 ## 💻Installatie
  - Dit project kan geforked worden, dit doe je door rechtsboven op fork te drukken. 
