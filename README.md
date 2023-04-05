@@ -1,5 +1,3 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
 # Vinimini product overzicht
 
 <img width="1440" alt="Schermafbeelding 2023-04-05 om 11 49 18" src="https://user-images.githubusercontent.com/112861069/230044347-5cb46ce5-b079-495f-8a3e-c1b21e120c5f.png">
