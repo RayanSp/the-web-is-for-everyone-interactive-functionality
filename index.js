@@ -16,8 +16,9 @@ app.use(express.urlencoded({ extended: true }))
 
 // Maak een route voor de index
 app.get('/', (request, response) => {
-  const url = 'https://api.vinimini.fdnd.nl/api/v1'
-  const noteUrl = url + '/notities'
+  const url = 'https://api.vinimini.fdnd.nl/api/v1/'
+  const idUrl = 'notities?id=clemozv3c3eod0bunahh71sx7'
+  const noteUrl = url + idUrl
 
   fetchJson(noteUrl).then((data) => {
     console.log(data)
@@ -44,12 +45,12 @@ app.get('/contact', (request, response) => {
   app.post('/notities', (request, response) => {
     const url = 'https://api.vinimini.fdnd.nl/api/v1'
     const noteUrl = url + '/notities'
+    // const idUrl = url + noteUrl + '?id=clemozv3c3eod0bunahh71sx7'
 
     request.body.afgerond = false
     request.body.persoonId = 'clemozv3c3eod0bunahh71sx7'
     request.body.datum = request.body.datum + ':00Z'
     request.body.herinnering = [request.body.herinnering + ':00Z']
-    // request.body.aanmelddatum = (new Date()).toISOString();
     
     postJson(url + '/notities', request.body).then((data) => {
       let newNote = { ... request.body }

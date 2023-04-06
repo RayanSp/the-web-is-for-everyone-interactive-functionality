@@ -100,52 +100,54 @@ legend {
 
 .input-date {
     margin-top: .5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
-    border: 2px solid black;
+    border: none;
+    border-bottom: 2px solid var(--clr-green);
     font-weight: normal;
     transition: .3s;
 }
 
 .input-date:focus {
-    background-color: var(--clr-green);
+    border-bottom: 3px solid var(--clr-green);
     outline: none;
     transform: scale(1.03);
 }
 
 .input-titel {
     margin-top: .5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
-    border: 2px solid black;
+    border: none;
+    border-bottom: 2px solid var(--clr-green);
     font-weight: normal;
     transition: .3s;
 }
 
 .input-titel:focus {
-    background-color: var(--clr-green);
     outline: none;
     transform: scale(1.03);
-    /* border-radius: 10px; */
+    border-bottom: 3px solid var(--clr-green);
 }
 
 .input-mail {
     margin-top: .5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
-    border: 2px solid black;
+    border: none;
+    border-bottom: 2px solid var(--clr-green);
     font-weight: normal;
     transition: .3s;
 }
 
 .input-mail:focus {
-    background-color: var(--clr-green);
+    border-bottom: 3px solid var(--clr-green);
     outline: none;
     transform: scale(1.03);
 }
@@ -155,22 +157,22 @@ legend {
     color: red;
 }
 
-.input-label-uitleg {
+.input-label-2 span {
     font-weight: normal;
     opacity: 0.5;
     font-size: 13px;
 }
 
 .textarea-aantekening {
-    border: 2px solid black;
+    border: 2px solid var(--clr-green);
     margin-top: .5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     padding-left: 5px;
     transition: .3s;
 }
 
 .textarea-aantekening:focus {
-    background-color: var(--clr-green);
+    border: 3px solid var(--clr-green);
     outline: none;
     transform: scale(1.03);
 }
@@ -209,11 +211,19 @@ legend {
     justify-content: center;
     flex-direction: column;
     width: 30rem;
-    height: 39.85rem;
+    height: 44rem;
+    overflow-y: scroll;
 }
 
 .aantekeningen-output h2 {
     color: var(--clr-green);
+}
+
+.notitie-container {
+    background-color: var(--clr-yellow);
+    text-align: center;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 930px ) {
