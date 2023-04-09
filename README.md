@@ -1,7 +1,6 @@
 # Vinimini product overzicht
 
-<img width="1440" alt="Schermafbeelding 2023-04-05 om 11 49 18" src="https://user-images.githubusercontent.com/112861069/230044347-5cb46ce5-b079-495f-8a3e-c1b21e120c5f.png">
-
+<img width="1440" alt="Schermafbeelding 2023-04-05 om 11 49 18" src="https://user-images.githubusercontent.com/112861069/230776389-d9e82015-31ff-4990-8ce0-eedec0637123.png">
 
 
 
